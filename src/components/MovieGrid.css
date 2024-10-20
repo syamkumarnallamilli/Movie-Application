@@ -1,0 +1,82 @@
+/* MovieGrid.css */
+* {
+    box-sizing: border-box;
+  }
+  
+  .movie-grid {
+    width: 100%;
+    max-width: 100%; /* Prevent it from exceeding the width */
+    margin: 0 auto; /* Center it */
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  
+    background-color: black; /* Change to your desired background color */
+    /* Optional: Adjust as necessary */
+     /* Center the grid */
+  }
+  
+  
+  /* Movie card styles */
+  .movie-card {
+   
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .movie-card h3 {
+    margin: 10px;
+    font-size: 1.2em; /* Adjusted for larger screens */
+  }
+  
+  .movie-card p {
+    margin: 10px;
+    color: #666;
+  }
+  
+  /* Styles for mobile devices */
+  @media (max-width: 600px) {
+    .movie-grid {
+      grid-template-columns: 1fr; /* Smaller grid items */
+      padding: 10px; /* Reduced padding */
+      margin-left: 200px; /* Adjusted margin for mobile */
+    
+    }
+    .movie-card {
+      /* Keep the same background color */
+    width:140px;
+    height:250px;
+  
+    }
+  
+    .movie-card h3 {
+      font-size: 1em; /* Smaller font size for titles */
+      margin: 5px; /* Smaller margin */
+    }
+  
+    .movie-card p {
+      font-size: 0.9em; /* Smaller font size for paragraphs */
+    }
+  
+    .movie-card img {
+      height: 120px; /* Fixed height for images */
+      object-fit: cover; /* Maintain aspect ratio */
+    }
+  }
+  

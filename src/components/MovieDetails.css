@@ -1,0 +1,90 @@
+.movie-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(232, 22, 22);
+    padding: 20px;
+    background-image: url('https://image.tmdb.org/t/p/original/YOUR_MOVIE_BACKDROP_PATH'); /* Use movie backdrop image */
+    background-size: cover; /* Ensure the backdrop image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  
+  .movie-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em; /* Responsive font size */
+  }
+  
+  .movie-rating {
+    margin-bottom: 10px; /* Spacing for movie rating */
+  }
+  
+  .trailer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .movie-overview {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Limits the number of lines of text to show */
+    -webkit-box-orient: vertical;
+    text-align: center;
+    margin: 10px 0;
+    max-width: 800px;
+  }
+  
+  .movie-image {
+    width: 100%;
+    max-width: 500px; /* Limit image size on larger screens */
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  /* Mobile responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .movie-title {
+      font-size: 1.5em; /* Smaller title size on mobile */
+    }
+  
+    .trailer-container iframe {
+      width: 90%; /* Ensure trailer fits within the container */
+      height: auto;
+      max-width: 100%;
+      border: none; /* Remove any default borders */
+    }
+    .movie-image {
+      max-width: 350px; /* Decrease image size for mobile */
+    }
+    .movie-overview {
+      font-size: 5px;
+      text-align: justify;
+      margin-right: 200px;
+    }
+    .trailer-container{
+      width:210px;
+      margin-right: 60px;
+    }
+  
+     .movie-overview {
+      -webkit-line-clamp: 3; /* Show fewer lines on mobile */
+      padding: 0 10px;
+      font-size: 0.9em; /* Smaller font size for overview text */
+    }
+    .movie-detail-container {
+      padding: 10px;
+       /* Reduced padding for smaller devices */
+       margin-left: 110px;
+       height:470px;
+      
+  
+    }
+  }
+  

@@ -1,0 +1,68 @@
+.register-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px); /* Background blur effect */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 999; /* Ensures it stays on top */
+}
+
+.register-card {
+    background-color: #141414;
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 320px;
+}
+
+.register-card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.register-card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: none;
+    background: #333;
+    color: white;
+}
+
+.register-card button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background: #e50914;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+.success {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
