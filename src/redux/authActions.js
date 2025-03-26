@@ -1,4 +1,4 @@
-const registeredUsers = []; // Store registered users
+
 
 export const register = (email, password) => async (dispatch) => {
     return new Promise((resolve, reject) => {
